@@ -5,15 +5,25 @@ import './App.css';
 import './bootstrap.css';
 
 
+
 class App extends React.Component{
   render(){
     return(
-      <React.Fragment>
-      
-          <Navbar />
+     <div className="conatiner">
+       <div className="row">
+         <div className="col-lg-10 mx-auto">
+         <Navbar />
+         </div>
+        
+       </div>
+        <div className="row">
+          <div className="col-lg-10 mx-auto">
           <MainComponent />
-         
-      </React.Fragment>
+          </div>
+       
+        </div>
+       
+     </div>
     )
   }
 }
