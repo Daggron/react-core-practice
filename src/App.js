@@ -1,16 +1,21 @@
 import React from 'react';
-import ParentComponent from './parent'
+import Navbar from './components/navbar';
+import MainComponent from './components/main'
 import './App.css';
-import Form from "./form";
+import './bootstrap.css';
 
-function App() {
-  return (
-    <div className="App">
-      {/*<ParentComponent />*/}
 
-      <Form />
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return(
+      <React.Fragment>
+      
+          <Navbar />
+          <MainComponent />
+         
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;
